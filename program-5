@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+main()
+{
+	char str1[21],str2[21];
+	int i,j=0;
+  cout<<"Enter the string:";
+	gets(str1);
+	for(i-0;str1[i]!=0;i++);
+	i--;
+	while(i>=0)
+	{
+		str2[j]=str1[i];
+		i--;
+		j++;
+	}
+	str2[j]='\0';
+	cout<<str2;
+	if(strcmp(str1,str2)==0)
+  cout<<"\nPalindrome\n";
+	else
+	cout<<"\nNot a palindrome\n";
+}
